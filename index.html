@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Books Library</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #1e1e1e;
+      color: #fff;
+      padding: 2rem;
+    }
+
+    h2 {
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      color: #ccc;
+      margin-top: 0;
+      margin-bottom: 1rem;
+    }
+
+    .section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1rem;
+    }
+
+    .card {
+      background-color: #2a2a2a;
+      border-radius: 8px;
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .avatar {
+      width: 48px;
+      height: 48px;
+      border-radius: 8px; /* Use 50% for circles */
+      background-color: #0078d4;
+      flex-shrink: 0;
+    }
+
+    .card-body {
+      flex-grow: 1;
+    }
+
+    .card-title {
+      font-size: 1rem;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    .card-subtitle {
+      font-size: 0.875rem;
+      color: #aaa;
+    }
+
+    .card-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .card-actions button {
+      background-color: #3a3a3a;
+      color: white;
+      border: 1px solid #555;
+      border-radius: 4px;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      font-size: 0.875rem;
+    }
+
+    .card-actions button:hover {
+      background-color: #555;
+    }
+
+    .card-actions button:first-child {
+      background-color: #0078d4;
+      border: none;
+    }
+
+    .see-all {
+      float: right;
+      font-size: 0.875rem;
+      color: #66aaff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>
+    Recommended by your library
+    <a class="see-all" href="#">See all</a>
+  </h2>
+  <p>Curated by the library staff</p>
+  <div class="section">
+    <div class="card">
+      <div class="avatar" aria-hidden="true"></div>
+      <div class="card-body">
+        <div class="card-title">Dune</div>
+        <div class="card-subtitle">Frank Herbert</div>
+      </div>
+      <div class="card-actions">
+        <button>Buy</button>
+        <button>Learn More</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="avatar" aria-hidden="true"></div>
+      <div class="card-body">
+        <div class="card-title">1984</div>
+        <div class="card-subtitle">George Orwell</div>
+      </div>
+      <div class="card-actions">
+        <button>Buy</button>
+        <button>Learn More</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="avatar" aria-hidden="true"></div>
+      <div class="card-body">
+        <div class="card-title">The Hobbit</div>
+        <div class="card-subtitle">J.R.R. Tolkien</div>
+      </div>
+      <div class="card-actions">
+        <button>Buy</button>
+        <button>Learn More</button>
+      </div>
+    </div>
+  </div>
+
+  <h2>
+    Featured New Arrivals
+    <a class="see-all" href="#">See all</a>
+  </h2>
+  <p>Handpicked by our editorial team</p>
+  <div class="section">
+    <div class="card">
+      <div class="avatar" aria-hidden="true"></div>
+      <div class="card-body">
+        <div class="card-title">Project Hail Mary</div>
+        <div class="card-subtitle">Andy Weir</div>
+      </div>
+      <div class="card-actions">
+        <button>Buy</button>
+        <button>Learn More</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="avatar" aria-hidden="true"></div>
+      <div class="card-body">
+        <div class="card-title">The Midnight Library</div>
+        <div class="card-subtitle">Matt Haig</div>
+      </div>
+      <div class="card-actions">
+        <button>Buy</button>
+        <button>Learn More</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="avatar" aria-hidden="true"></div>
+      <div class="card-body">
+        <div class="card-title">Atomic Habits</div>
+        <div class="card-subtitle">James Clear</div>
+      </div>
+      <div class="card-actions">
+        <button>Buy</button>
+        <button>Learn More</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
